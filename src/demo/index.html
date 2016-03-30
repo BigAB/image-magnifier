@@ -1,0 +1,28 @@
+<style>
+body {
+	text-align: left;
+}
+image-magnifier-view {
+
+	vertical-align: top;
+	margin-left: 1em;
+}
+
+</style>
+
+<script type="text/stache" can-autorender>
+	<can-import from="@bigab/image-magnifier/" />
+	<can-import from="@bigab/image-magnifier/image-magnifier-view/" />
+
+	<image-magnifier
+		thumb-src="images/starry-night-over-the-rhone_small.jpg"
+		src="images/starry-night-over-the-rhone.jpg"
+	></image-magnifier>
+
+	<image-magnifier-view for="image-magnifier">
+		<p>Starry Night Over The Rhone<p>
+		<p>by Vincent van Gogh</p>
+	</image-magnifier-view>
+</script>
+
+<script src="../../node_modules/steal/steal.js" main="can/view/autorender/"></script>

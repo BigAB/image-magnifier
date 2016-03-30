@@ -1,0 +1,4 @@
+<content></content>
+{{#if activeSource}}
+<img class="image-magnifier-view-image" {$src}="activeSource.src" ($load)="updateRawImageSize(%element.naturalHeight, %element.naturalWidth)">
+{{/if}}

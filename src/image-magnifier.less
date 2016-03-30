@@ -1,0 +1,28 @@
+image-magnifier {
+    display: inline-block;
+
+    .image-magnifier-thumb-wrapper {
+        position: relative;
+        display: inline-block;
+        cursor: inherit;
+        background-color: white;
+
+        &.active .image-magnifier-thumb {
+            opacity: 0.5;
+        }
+
+        .image-magnifier-thumb {
+            display: block;
+            margin: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .image-magnifier-lens {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            outline: 1px solid #ddd;
+        }
+    }
+}

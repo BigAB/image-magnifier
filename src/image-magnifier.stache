@@ -1,0 +1,8 @@
+<a class="image-magnifier-thumb-wrapper{{#if active}} active{{/if}}"
+	 {($href)}="src"
+	 ($mouseenter)="setActive(true)"
+	 ($mouseleave)="setActive(false)"
+>
+	<img class="image-magnifier-thumb" {$src}="thumbSrc" >
+	<div class="image-magnifier-lens"  {{#unless active}}hidden{{/unless}} style="background-image:url({{thumbSrc}});"></div>
+</a>
